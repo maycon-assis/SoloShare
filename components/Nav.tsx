@@ -14,13 +14,6 @@ const Nav = () => {
         <Image src="/Colour.png" height={45} width={45} alt="Guitar Logo" />
       </Link>
       {isUser ? (
-        <motion.button
-          whileHover={{ scale: 1.02 }}
-          className=" rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-Inter flex items-center justify-center"
-        >
-          Sign In
-        </motion.button>
-      ) : (
         <div className="sm:flex hidden gap-4">
           <motion.button
             whileHover={{ scale: 1.1 }}
@@ -34,7 +27,17 @@ const Nav = () => {
           >
             Sign Out
           </motion.button>
+          <Link href="/profile">
+            <Image src="/BW.png" alt="User Image" height={45} width={45}></Image>
+          </Link>
         </div>
+      ) : (
+        <motion.button
+          whileHover={{ scale: 1.02 }}
+          className=" rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-Inter flex items-center justify-center"
+        >
+          Sign In
+        </motion.button>
       )}
     </div>
   )
