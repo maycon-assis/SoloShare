@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Home = () => {
   return (
     <main className="py-20 flex flex-col items-center text-center gap-3">

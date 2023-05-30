@@ -27,9 +27,6 @@ const Nav = () => {
           >
             Sign Out
           </motion.button>
-          <Link href="/profile">
-            <Image src="/BW.png" alt="User Image" height={45} width={45}></Image>
-          </Link>
         </div>
       ) : (
         <motion.button
