@@ -1,5 +1,6 @@
 import Nav from '@/components/Nav'
 import './globals.css'
+import { ClerkProvider } from '@clerk/nextjs'
 
 export const metadata = {
   title: 'SoloShare',
@@ -8,11 +9,13 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="px-5">
-        <Nav />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className="px-5">
+          <Nav />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }
