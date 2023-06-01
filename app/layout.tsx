@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="px-5">
+        <body className="px-5 flex flex-col h-screen">
           <Nav />
           {children}
         </body>

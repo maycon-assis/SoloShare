@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <main className="py-20 flex flex-col items-center text-center gap-3">
+    <main className="flex flex-col items-center justify-center text-center gap-3 py-40">
       <h1 className="text-4xl font-bold font-Lato">
         Discover & Share <br /> <span className="text-teal-500">Guitar Solos and Riffs</span>
       </h1>

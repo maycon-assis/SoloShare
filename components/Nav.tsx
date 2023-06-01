@@ -4,9 +4,10 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { currentUser } from '@clerk/nextjs'
 
 const Nav = () => {
-  const isUser = true
+  const isUser = false
 
   return (
     <div className="py-5 flex justify-between items-center">
